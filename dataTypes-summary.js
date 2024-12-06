@@ -7,6 +7,9 @@
  * 5. undefined
  * 6. Symbol
  * 7. BigInt
+ * 
+ * Notes : 
+ * It comes under stack memory. Which creates a copy of the variable and assigned the value to the newly created copied variable
  */
 
 /**
@@ -14,5 +17,15 @@
  * 1. Arrays
  * 2. Object
  * 3. Function
+ * Notes:
+ * It comes under heap memory. Which reassigned the value to the reference of the variable. It does not create a copy 
  */
 
+// Stack(Primtive), Heap(Non- Primitive) 
+
+
+let myName = 'Suresh';
+let anotherName = myName;
+anotherName = 'Pradhan';
+console.log(myName);
+console.log(anotherName);
